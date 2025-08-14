@@ -163,7 +163,7 @@ For questions or contributions, contact Monika M at:
 
 Email: monikashivan1311@gmail.com
 
-GitHub: github.com/MonikaM1311
+GitHub: [github.com/MonikaM1311](https://github.com/MonikaM1311)
 
 “Study smarter, not harder, with NEXIA AI!”
 

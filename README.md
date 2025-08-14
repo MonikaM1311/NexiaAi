@@ -11,29 +11,50 @@ Nexia is an AI academic assistant that lets students interact with textbooks, le
 ---
 
 ## Features
+# 📚 NEXIA AI - AI Academic Assistant
 
-### 1. Task Management
-- Add, mark complete, and track study tasks.
-- See completed tasks and ongoing tasks in an organized view.
-
-### 2. Streak Tracker
-- Track your daily study streak.
-- Complete at least one task per day to maintain the streak.
-
-### 3. PDF Q&A & Summarization
-- Upload PDFs.
-- AI summarizes content.
-- Ask questions, and answers are retrieved from PDFs or Google search if content is not found locally.
+NEXIA AI is an **interactive academic assistant** built with Python and Streamlit. It integrates AI, PDF processing, semantic search, task management, MCQ generation, and animation creation to help students **study smarter, stay organized, and maintain streaks**.
 
 ---
 
-## Setup
+## **Features**
+
+1. **Task Management**
+   - Add, track, and prioritize daily study tasks.
+   - Mark tasks as done and monitor progress.
+   - Export tasks and streaks to Excel.
+
+2. **Streak Tracker**
+   - Track study consistency with daily streaks.
+   - Visualize progress over the last 7 days with bar charts.
+
+3. **PDF Summary & Search**
+   - Upload PDFs and extract text automatically.
+   - Generate summaries using **Mistral AI**.
+   - Search PDF content using **semantic search** powered by FAISS embeddings.
+
+4. **MCQ Generator**
+   - Generate multiple-choice questions from PDFs using AI.
+   - Customizable number of questions and options.
+
+5. **Animation Generator**
+   - Create text animations with MoviePy directly in the app.
+   - Customize prompts to generate creative educational videos.
+
+6. **Google Search Integration (Optional)**
+   - Fetch additional context using Google Custom Search API if required.
+
+7. **Interactive UI**
+   - Built with Streamlit and enhanced with **Lottie animations** for a visually appealing experience.
+
+---
+
+## **Installation**
 
 1. Clone the repository:
-
 ```bash
-git clone <repo_url>
-cd Nexia Ai
+git clone https://github.com/yourusername/nexia-ai.git
+cd nexia-ai
 ```
 2.  Create a virtual environment and activate it:
 ```
@@ -64,21 +85,87 @@ On Windows PowerShell, use setx VARIABLE_NAME "value".
 
 ###Usage
 ```
-streamlit run study_mate_pro_mistral_google.py
+streamlit run NexiaAi.py
 ```
+avigate through the sidebar:
 
-Navigate the sidebar to access Task Management, Streak Tracker, or PDF Q&A.
+Home – Overview of app features.
 
-Upload PDFs, generate summaries, or ask questions.
+Task Management – Add and manage your study tasks.
 
-Tasks can be added and marked as done to track streaks.
+Streak Tracker – Track your daily study streak.
 
-##Notes
+PDF Summary & Search – Upload PDFs, summarize, and search content.
 
-PDF Handling: Uses PyMuPDF to extract text.
+MCQ Generator – Generate multiple-choice questions from PDFs.
 
-Embeddings: FAISS + Sentence Transformers for fast semantic search.
+Animation Generator – Create simple text-based animations.
 
-AI Answers: Mistral LLM is used for summarization and Q&A.
+Dependencies
 
-Google Search: Optional fallback if PDF does not contain relevant content.
+Python 3.10+
+
+Streamlit
+
+PyMuPDF (fitz)
+
+FAISS
+
+Pickle
+
+Pandas
+
+Matplotlib
+
+SpeechRecognition
+
+SentenceTransformers
+
+Mistral AI SDK
+
+Streamlit Lottie
+
+MoviePy
+
+Requests
+
+Project Structure
+NEXIA.py           # Main Streamlit app
+faiss.index        # FAISS vector store
+faiss_store.pkl    # PDF text storage
+requirements.txt   # Python dependencies
+README.md          # Project documentation
+
+
+Home Page with interactive Lottie animation
+
+Add tasks and track progress
+
+Track weekly study streaks
+
+Future Enhancements
+
+Add voice commands for task management.
+
+Integrate real-time quiz functionality.
+
+Advanced animation generation (shapes, images, audio).
+
+Dashboard analytics for PDF reading and MCQ performance.
+
+##License
+
+MIT License © 2025 Monika M.
+
+##Contact
+
+For questions or contributions, contact Monika M at:
+
+Email: monikashivan1311@gmail.com
+
+GitHub: github.com/MonikaM1311
+
+“Study smarter, not harder, with NEXIA AI!”
+
+
+---
